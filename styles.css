@@ -19,5 +19,8 @@
 }
 
 .checkbox-container input[type='checkbox'] {
-  display: hidden;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0;
 }
