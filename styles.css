@@ -1,23 +1,23 @@
-svg {
+.checkbox-container svg {
   border: 1px solid black;
   border-radius: 4px;
   width: 2rem;
 }
 
-svg > * {
+.checkbox-container svg > * {
   display: none;
 }
 
-input[type='checkbox']:checked + label svg > * {
+.checkbox-container input[type='checkbox']:checked + svg > * {
   display: block;
   fill: black;
   color: white;
 }
-input[type='checkbox']:focus + label svg {
-  fill: red;
+.checkbox-container input[type='checkbox']:focus + svg {
   outline: 2px solid blue;
   outline-offset: 2px;
 }
-input[type='checkbox'] {
+
+.checkbox-container input[type='checkbox'] {
   display: hidden;
 }
