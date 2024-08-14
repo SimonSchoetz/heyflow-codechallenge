@@ -1,0 +1,19 @@
+svg {
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 2rem;
+}
+
+svg > * {
+  display: none;
+}
+
+input[type='checkbox']:checked + label svg > * {
+  display: block;
+  fill: black;
+  color: white;
+}
+
+input[type='checkbox'] {
+  /* display: none; */
+}
