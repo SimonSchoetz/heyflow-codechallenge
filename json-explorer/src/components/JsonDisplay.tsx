@@ -1,5 +1,10 @@
 import React from 'react';
+import { JsonObject } from '../types';
 
-export default function JsonDisplay() {
-  return <div>JsonDisplay</div>;
+type JsonDisplayProps = {
+  readonly data: JsonObject;
+};
+
+export default function JsonDisplay({ data }: JsonDisplayProps) {
+  return <div>{JSON.stringify(data)}</div>;
 }
