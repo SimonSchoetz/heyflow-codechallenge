@@ -6,5 +6,20 @@ type JsonDisplayProps = {
 };
 
 export default function JsonDisplay({ data }: JsonDisplayProps) {
-  return <div>{JSON.stringify(data)}</div>;
+  const stringified = JSON.stringify(data, null, 4);
+  const rows = stringified.split('\n');
+
+  return (
+    <div>
+      <pre>
+        <ul>
+          {rows.map((row, index) => (
+            <li key={`row-num-${index}`} style={{ textAlign: 'left' }}>
+              {row}
+            </li>
+          ))}
+        </ul>
+      </pre>
+    </div>
+  );
 }
