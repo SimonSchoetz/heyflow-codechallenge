@@ -1,9 +1,11 @@
 import { AccessKeyMap } from './create-access-key-map';
 
+export type ListItemData = [string, AccessKeyMap | null];
+
 export const mapRowsWithKeyMaps = (
   rows: string[],
   keyMaps: AccessKeyMap[]
-): Array<[string, AccessKeyMap | null]> => {
+): Array<ListItemData> => {
   let indexOffset = 0;
 
   return rows.map((row, index) => {
