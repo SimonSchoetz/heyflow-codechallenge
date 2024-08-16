@@ -8,10 +8,11 @@ import {
 } from './util';
 
 type JsonDisplayProps = {
-  readonly data: JsonObject;
+  data: JsonObject;
+  setKey: Dispatch<SetStateAction<string>>;
 };
 
-export default function JsonDisplay({ data }: JsonDisplayProps) {
+export default function JsonDisplay({ data, setKey }: JsonDisplayProps) {
   const displayRows = mapJsonToDisplayRows(data);
 
   const keyMaps = createAccessKeyMap(data);
@@ -23,7 +24,7 @@ export default function JsonDisplay({ data }: JsonDisplayProps) {
       <pre>
         <ul>
           {mappedRows.map((row, index) => (
-            <ListItem data={row} setKey={console.log} key={index} />
+            <ListItem data={row} setKey={setKey} key={index} />
           ))}
         </ul>
       </pre>
