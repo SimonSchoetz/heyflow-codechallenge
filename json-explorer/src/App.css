@@ -1,12 +1,6 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  max-width: 720px;
+  width: 100%;
 }
 
 .App-header {
@@ -15,9 +9,6 @@
   font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
-}
 ul {
   padding: 1rem;
 }
@@ -44,4 +35,15 @@ button {
 }
 button:hover {
   cursor: pointer;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 4px;
 }

@@ -9,7 +9,16 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: '0 1rem',
+      }}
+    >
+      <App />
+    </div>
   </React.StrictMode>
 );
 
