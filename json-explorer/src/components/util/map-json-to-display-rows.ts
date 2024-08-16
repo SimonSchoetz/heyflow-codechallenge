@@ -16,5 +16,5 @@ const sanitizeRow = (row: string, offset: number): string => {
   const cleanKey = keyPart.replace(/"/g, '');
 
   const cleanValue = valuePart.join(':').replace(/"/g, "'");
-  return `${cleanKey}${cleanValue ? ':' + cleanValue : ''}`;
+  return `${cleanKey}${cleanValue ? ':' : ''}${cleanValue}`;
 };

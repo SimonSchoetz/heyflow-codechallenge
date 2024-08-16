@@ -1,4 +1,4 @@
-import { mapJsonToDisplayRows } from './map-json-to-diplay-rows';
+import { mapJsonToDisplayRows } from './map-json-to-display-rows';
 
 describe('mapJsonToDisplayRows', () => {
   it('should be defined', () => {
