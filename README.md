@@ -1,6 +1,6 @@
 # heyflow-codechallenge
 
-Both challenges will have their own branch that can be checked out to inspect my solutions:
+My solutions challenges can be found in the following branches:
 
 ```bash
 challenge/custom-checkbox
